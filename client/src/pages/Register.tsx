@@ -1,4 +1,3 @@
-import React from 'react'
 import register_page from "../assets/register_page.png";
 import logo from "../assets/logo.png";
 import SignIn from '../components/SignIn';
