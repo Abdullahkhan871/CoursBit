@@ -8,7 +8,7 @@ const Register = () => {
     return (
         <div className='bg-blue-50 min-h-screen flex'>
             {/* {Left side panel} */}
-            <div className='flex-1 relative'>
+            <div className='hidden md:block md:flex-1 md:relative'>
                 <div>
                     <img src={register_page} alt="Register Page" className='w-full h-screen object-cover' />
                 </div>
