@@ -5,7 +5,7 @@ import SignIn from '../components/SignIn';
 
 const Register = () => {
     return (
-        <div className='bg-blue-50 min-h-screen flex'>
+        <div className='min-h-screen flex'>
             {/* {Left side panel} */}
             <div className='hidden md:block md:flex-1 md:relative'>
                 <div>

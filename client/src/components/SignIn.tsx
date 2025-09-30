@@ -14,8 +14,8 @@ const SignIn = () => {
 
     return (
 
-        <div className="flex-1 flex items-center justify-center bg-white">
-            <div className="w-full min-h-screen max-h-screen max-w-md p-5 flex flex-col justify-center gap-4 md:p-8 md:gap-5">
+        <div className="flex-1 flex justify-center bg-white">
+            <div className="w-full max-h-screen max-w-md p-5 flex flex-col justify-center gap-4 md:p-8 md:gap-5">
                 <div className="md:hidden">
                     <img src={logo_blue} alt="" className='w-33 h-9 object-cover' />
                 </div>
