@@ -14,7 +14,7 @@ const Register = () => {
                 <div className='absolute bottom-10 flex justify-center'>
                     <div className='w-4/5 flex flex-col gap-5'>
                         <img src={logo} alt="" className='object-cover w-52 h-12' />
-                        <p className='font-medium text-5xl text-white leading-14'>Improve your skill with Coursea!</p>
+                        <p className='font-medium text-3xl lg:text-5xl lg:leading-14 text-white'>Improve your skill with Coursea!</p>
                         <p className='text-white'>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, </p>
                     </div>
                 </div>

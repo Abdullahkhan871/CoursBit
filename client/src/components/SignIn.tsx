@@ -2,7 +2,7 @@ import { useState } from "react";
 import { BiShow } from "react-icons/bi";
 import { BiHide } from "react-icons/bi";
 import { Link } from "react-router-dom";
-
+import logo_blue from "../assets/logo_blue.png";
 
 const SignIn = () => {
     const [showPassword, setShowPassword] = useState<boolean>(false)
@@ -13,8 +13,12 @@ const SignIn = () => {
 
 
     return (
+
         <div className="flex-1 flex items-center justify-center bg-white">
-            <div className="w-full max-h-screen max-w-md p-8 space-y-5">
+            <div className="w-full min-h-screen max-h-screen max-w-md p-5 flex flex-col justify-center gap-4 md:p-8 md:gap-5">
+                <div className="md:hidden">
+                    <img src={logo_blue} alt="" className='w-33 h-9 object-cover' />
+                </div>
                 {/* Title */}
                 <h2 className="text-3xl font-bold">Sign In</h2>
                 <p className="text-sm">
