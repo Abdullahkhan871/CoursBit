@@ -3,8 +3,10 @@ import {
   login,
   register,
   forgetPassword,
+  logout,
 } from "../controllers/user.controller";
 import { body } from "express-validator";
+import { authMiddleware } from "../middleware/auth.middleware";
 
 const userRouter = express.Router();
 
@@ -35,6 +37,7 @@ userRouter.post(
   ],
   login
 );
+userRouter.post("/logout", authMiddleware, logout);
 userRouter.post("/foget-passwrod", forgetPassword);
 
 export default userRouter;

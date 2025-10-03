@@ -43,7 +43,7 @@ export const login = async (req: Request, res: Response) => {
   const user = await usersModel.findOne({ email }).select("+password");
   if (!user) {
     return res.status(400).json({
-      message: "user not exist",
+      message: "Un Authorized",
     });
   }
   const isVerified = await bcrypt.compare(password, user.password);
@@ -65,8 +65,8 @@ export const login = async (req: Request, res: Response) => {
 };
 
 export const logout = async (req: Request, res: Response) => {
-  // blaclist old token
-  // remove token from client device
+  res.clearCookie("token");
+  return res.status(200).json({ message: "user logout " });
 };
 
 export const forgetPassword = (req: Request, res: Response) => {};

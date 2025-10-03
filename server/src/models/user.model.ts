@@ -7,7 +7,7 @@ interface IUsers {
   password: string;
 }
 
-interface IUserDocument extends IUsers, Document {
+export interface IUserDocument extends IUsers, Document {
   generateAuthToken(): string;
 }
 
